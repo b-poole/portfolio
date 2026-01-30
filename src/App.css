@@ -5,14 +5,147 @@
   text-align: center;
 }
 
-.about-me-section {
-  display: flex;
+/* Tech Stack Icons */
+.tech-stack ul {
+  list-style: none;
+  padding: 0;
 }
 
-.blurb {
-  flex: 2;
-  padding-right: 2em;
+.tech-stack li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
 }
+
+.tech-stack svg {
+  font-size: 1.5rem;
+}
+
+/* Intro Section */
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Intro Links */
+.intro-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.icon-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 8px;
+
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.icon-link svg {
+  font-size: 1.4rem;
+}
+
+.icon-link:hover {
+  background-color: #646cff; /* accent color */
+  transform: translateY(-2px);
+}
+
+/* CTA Buttons */
+.go-to-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.cta {
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px; /* pill shape */
+  font-weight: 600;
+  font-size: 1rem;
+
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, #646cff, #8f94fb);
+  color: white;
+  box-shadow: 0 8px 24px rgba(100, 108, 255, 0.35);
+}
+
+.cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(100, 108, 255, 0.5);
+}
+
+.cta-secondary {
+  border: 2px solid #646cff;
+  color: #646cff;
+  background: transparent;
+}
+
+.cta-secondary:hover {
+  background: rgba(100, 108, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.cta:focus-visible {
+  outline: 3px solid #8f94fb;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .go-to-links {
+    flex-direction: column;
+  }
+
+  .cta {
+    width: 100%;
+  }
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  color: #646cff;
+  opacity: 0.8;
+}
+
+.scroll-indicator svg {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(7px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+}
+
+
 
 .logo {
   height: 6em;
