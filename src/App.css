@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+.about-me-section {
+  display: flex;
+}
+
+.blurb {
+  flex: 2;
+  padding-right: 2em;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

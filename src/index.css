@@ -49,6 +49,7 @@ header {
   flex-grow: 1;
   display: flex;
   flex-flow: row wrap;
+  border-bottom: #464bb8 2px solid;
 }
 
 .name {
@@ -90,11 +91,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-hr {
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-top: 1px solid #4f55c7;
 }

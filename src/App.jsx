@@ -3,48 +3,46 @@ import './App.css'
 function App() {
   return (
     <>
-      <Header />
-      <hr/>
-      <p>Welcome to my portfolio website!</p>
+      <div className='introduction'>
+        <h1>Barrett Poole</h1>
+        <h2>Junior Frontend Developer</h2>
+        <div className='intro-links'>
+
+        </div>
+      </div>
+      <div className='go-to-links'>
+        <button className='go-to-projects'>Projects</button>
+        <button className='go-to-contact'>Contact Me</button>
+      </div>
+      <div className='about-me'>
+        <h2>About Me</h2>
+        <p>Hi, I’m Barrett. Junior Frontend Developer building responsive, user-focused web applications with React and JavaScript.</p>
+      </div>
+      <div className='tech-stack'>
+        <div className='skills'>
+
+        </div>
+        <div className='tools'>
+
+        </div>
+      </div>
+      <div className='projects'>
+        <h2>Projects</h2>
+        <div className='project-cards'>
+
+        </div>
+      </div>
+      <div className='contact-me'>
+        <h2>Contact Me</h2>
+        <div className='contact-links'>
+          <div className='email'></div>
+          <div className='linkedin'></div>
+          <div className='github'></div>
+        </div>
+      </div>
     </>
   )
 }
 
-function Header() {
-  return (
-    <header>
-      <SocialLinks />
-      <Name />
-      <ContactInfo />
-    </header>
-  )
-}
-
-function SocialLinks() {
-  return (
-    <div  className="social-links">
-      <h3>Social Links</h3>
-      <p><a href="https://www.linkedin.com/in/barrett-poole-630a3a145" rel="noopener noreferrer">LinkedIn</a></p>
-      <p><a href="https://github.com/b-poole" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-    </div>
-  )
-}
-
-function Name() {
-  return (
-    <div className="name">
-      <h1>Barrett Poole</h1>
-    </div>)
-}
-
-function ContactInfo() {
-  return (
-    <div className="contact-info">
-      <h3>Contact Info</h3>
-      <p>Email: barrettpoole14@gmail.com</p>
-      <p>Phone: (510) 589-9484</p>
-    </div>
-  )
-}
 
 export default App
