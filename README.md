@@ -1,67 +1,81 @@
-# Barrett Poole's Portfolio
+# Barrett Poole – Front-End Developer Portfolio
 
-Junior React Front-End Developer  
-Passionate about building responsive, user-friendly web applications  
-Based in Georgia, United States | Open to remote / hybrid roles
+Junior Front-End Developer specializing in React  
+Focused on building responsive, accessible, and user-friendly web applications  
+
+📍 Georgia, United States | Open to remote and hybrid roles
+
+---
 
 ## Portfolio Website
 
-This is my personal portfolio website, built to showcase my skills, projects, and growth as a React Junior Front-End Developer.
+This repository contains the source code for my personal portfolio website.  
+The site showcases my projects, technical skills, and growth as a junior front-end developer.
 
-Live Site: [TODO]  
-Email: Barrettpoole14@gmail.com  
-GitHub: [https://github.com/b-poole]  
-LinkedIn: [www.linkedin.com/in/barrett-poole-630a3a145]
+**Live Site:** https://barrettpoole.vercel.app  
+**Email:** barrettpoole14@gmail.com  
+**GitHub:** https://github.com/b-poole  
+**LinkedIn:** https://www.linkedin.com/in/barrett-poole-630a3a145
+
+---
 
 ## Tech Stack
 
-**Frontend**: React, JavaScript (ES6+), HTML5, CSS3  
-**Styling**: CSS Modules / Styled Components  
-**Tools**: Git, GitHub, npm, Vite  
-**Other**: Responsive Design, REST APIs  
+**Frontend**
+- React (Functional Components, Hooks)
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+**Styling**
+- CSS Modules
+- Styled Components
+
+**Tools & Workflow**
+- Git & GitHub
+- npm
+- Vite
+
+**Concepts**
+- Responsive, mobile-first design
+- Component-based architecture
+- State management with hooks
+- REST API integration
+- Clean, maintainable code
+
+---
 
 ## Features
 
-- Fully responsive design (mobile-first)
-- Built with modern React (functional components & hooks)
-- Reusable and clean component structure
-- Simple, user-focused UI
-- Projects section with live demos & source code
-- Contact section for recruiters
-- Projects Highlighted
+- Fully responsive, mobile-first layout
+- Modern React patterns using functional components and hooks
+- Clean, reusable component structure
+- Simple, intuitive user interface
+- Projects section with live demos and GitHub repositories
+- Contact section for recruiters and collaborators
 
-### Each project includes:
+---
 
-- A short description
+## Projects
+
+Each project includes:
+- A concise description of the problem and solution
 - Technologies used
-- Live demo link
-- GitHub repository link
+- Live demo (when available)
+- Source code on GitHub
 
-### Projects focus on:
+Projects focus on:
+- Real-world front-end development scenarios
+- React fundamentals and state management
+- API usage and data handling
+- Readable, maintainable code practices
 
-- Real-world React fundamentals
-- Component-based architecture
-- State management & props
-- API usage
-- Clean, readable code
+---
 
 ## Getting Started (Run Locally)
-```
-git clone https://github.com/yourusername/portfolio.git
+
+```bash
+git clone https://github.com/b-poole/portfolio.git
 cd portfolio
 npm install
 npm run dev
-```
-
-## Career Goal
-
-I’m actively seeking a Junior React / Front-End Developer position where I can:
-- Grow under mentorship
-- Contribute to real production code
-- Improve my React and JavaScript skills
-- Build meaningful user experiences
-
-
-## Notes
-This portfolio is continuously evolving as I learn new technologies and improve my skills.  
-Feedback and suggestions are always welcome!
