@@ -1,7 +1,5 @@
 import './App.css'
-import {
-  FaChevronDown
-} from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
 import Projects from './components/Projects';
 import Introduction from './components/Introduction';
 import CtaLinks from './components/CtaLinks';
@@ -13,38 +11,40 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <div className="center-line" aria-hidden="true"></div>
       <header className='introduction'>
         <Introduction />
       </header>
 
-      <section className='go-to-links'>
-        <CtaLinks />
-      </section>
+      <main>
+        <section className='go-to-links'>
+          <CtaLinks />
+        </section>
 
-      <div className='container'>
-        <a href="#about-me" className="scroll-indicator" aria-label="Scroll down">
-          <FaChevronDown />
-        </a>
-      </div>
-
-      <section id="about-me" className='about-me'>
-        <AboutMe />
-      </section>
-
-      <section className='tech-stack'>
-        <TechStack />
-      </section>
-
-      <section id="projects" className='projects'>
         <div className='container'>
-            <Projects />
+          <a href="#about-me" className="scroll-indicator" aria-label="Scroll down">
+            <FaChevronDown />
+          </a>
         </div>
-      </section>
 
-      <section id="contact-me" className='contact-me'>
-        <ContactMe />
-      </section>
+        <section id="about-me" className='about-me'>
+          <AboutMe />
+        </section>
+
+        <section className='tech-stack'>
+          <TechStack />
+        </section>
+
+        <section id="projects" className='projects'>
+          <div className='container'>
+              <Projects />
+          </div>
+        </section>
+
+        <section id="contact-me" className='contact-me'>
+          <ContactMe />
+        </section>
+      </main>
+      
       
       <footer className='footer'>
         <Footer />

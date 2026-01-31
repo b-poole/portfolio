@@ -1,4 +1,9 @@
+import { useRef, useState, useEffect } from 'react';
 import Project from './Project';
+import {
+  FaChevronRight,
+  FaChevronLeft
+} from 'react-icons/fa';
 import './Projects.css';
 
 const projectList = [
@@ -46,22 +51,93 @@ const projectList = [
     demoLink: 'https://task-manager-bp.vercel.app/',
     repoLink: 'https://github.com/b-poole/task-manager',
   },
+  {
+    title: 'Test',
+    description: 'A React + Vite task manager showcasing clean component architecture, state management with Hooks, and client-side persistence. Users can create, edit, complete, and delete tasks — demonstrating practical React skills and maintainable code.',
+    features: [
+      "Add new tasks with title and due date",
+      "Edit existing tasks inline",
+      "Delete unwanted tasks",
+      "Mark tasks as completed",
+      "Tasks persist across browser reloads using localStorage",
+      "Clean, readable component architecture"
+    ],
+    tech: [
+      "React (Functional Components & Hooks)",
+      "Vite (Fast build tool)",
+      "JavaScript (ES6+)",
+      "CSS for styling",
+      "localStorage for persistence"
+    ],
+    demoLink: 'https://task-manager-bp.vercel.app/',
+    repoLink: 'https://github.com/b-poole/task-manager',
+  }
   // Add more projects here
 ];
 
 export default function Projects() {
+  const scrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  // Update button visibility based on scroll position
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const updateScrollState = () => {
+      const { scrollLeft, scrollWidth, clientWidth } = el;
+
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1);
+    };
+
+    updateScrollState();
+    el.addEventListener('scroll', updateScrollState);
+    window.addEventListener('resize', updateScrollState);
+
+    return () => {
+      el.removeEventListener('scroll', updateScrollState);
+      window.removeEventListener('resize', updateScrollState);
+    };
+  }, []);
+
+  const scrollByPage = (direction) => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    el.scrollBy({
+      left: direction === 'right' ? el.clientWidth : -el.clientWidth,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
-        <section className="projects" id="projects">
-            <div className="container">
-                <h2>Projects</h2>
-                <div className="projects-grid">
-                    {projectList.map((project, index) => (
-                    <Project key={index} {...project} />
-                ))}
-                </div>
+      <section className="projects" id="projects">
+          <div className="container">
+            <h2>Projects</h2>
+            <div className='projects-wrapper'>
+              <button className={`scroll-btn left ${canScrollLeft ? 'visible' : 'hidden'}`} onClick={() => scrollByPage('left')}>
+                <FaChevronLeft />
+              </button>
+              
+
+              <div className="projects-grid" ref={scrollRef}>
+                  {projectList.map((project, index) => (
+                    <div className='project-item' key={index}>
+                      <Project {...project} />
+                    </div>
+              ))}
+              </div>
+              
+              <button className={`scroll-btn right ${canScrollRight ? 'visible' : 'hidden'}`} onClick={() => scrollByPage('right')}>
+                <FaChevronRight />
+              </button>
+              
             </div>
-        </section>   
+          </div>
+      </section>   
     </>
     
   );
