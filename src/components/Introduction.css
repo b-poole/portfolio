@@ -1,0 +1,37 @@
+.my-name {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #646cff;
+}
+
+.intro-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.icon-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 8px;
+
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.icon-link svg {
+  font-size: 1.4rem;
+}
+
+.icon-link:hover {
+  background-color: #646cff; /* accent color */
+  transform: translateY(-2px);
+}

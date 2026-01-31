@@ -1,0 +1,36 @@
+.contact-me {
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-me:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(100, 108, 255, 0.3);
+}
+
+.contact-me h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-me p {
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-buttons .cta {
+  min-width: 10rem;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
