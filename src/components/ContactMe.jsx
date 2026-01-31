@@ -8,7 +8,7 @@ export default function ContactMe() {
           <div className="contact-buttons">
             <a
               className="cta cta-primary"
-              href="https://linkedin.com/in/yourprofile"
+              href="www.linkedin.com/in/barrett-poole-630a3a145"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -16,13 +16,13 @@ export default function ContactMe() {
             </a>
             <a
               className="cta cta-primary"
-              href="https://github.com/yourusername"
+              href="https://github.com/b-poole/portfolio"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
             </a>
-            <a className="cta cta-secondary" href="mailto:youremail@example.com">
+            <a className="cta cta-secondary" href="mailto:barrettpool14@gmail.com">
               Email Me
             </a>
           </div>

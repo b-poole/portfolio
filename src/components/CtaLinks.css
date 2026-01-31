@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 600px) {
-  .go-to-links {
+  .go-to-links .container {
     flex-direction: column;
   }
 

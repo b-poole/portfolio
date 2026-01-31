@@ -52,25 +52,29 @@ const projectList = [
     repoLink: 'https://github.com/b-poole/task-manager',
   },
   {
-    title: 'Test',
-    description: 'A React + Vite task manager showcasing clean component architecture, state management with Hooks, and client-side persistence. Users can create, edit, complete, and delete tasks — demonstrating practical React skills and maintainable code.',
+    title: 'Project Management Dashboard',
+    description:
+      'A production-style project management dashboard focused on scalable frontend architecture. Built with React and Redux Toolkit, this app demonstrates real-world state management, API-driven data flows, and professional UI patterns commonly used in modern software teams.',
     features: [
-      "Add new tasks with title and due date",
-      "Edit existing tasks inline",
-      "Delete unwanted tasks",
-      "Mark tasks as completed",
-      "Tasks persist across browser reloads using localStorage",
-      "Clean, readable component architecture"
+      'View and manage project issues in a dashboard layout',
+      'Create, edit, and delete issues with form validation',
+      'Filter issues by status and priority',
+      'Sort and paginate large issue lists',
+      'Global state management using Redux Toolkit',
+      'Async data fetching with loading and error states',
+      'Responsive, mobile-friendly dashboard design'
     ],
     tech: [
-      "React (Functional Components & Hooks)",
-      "Vite (Fast build tool)",
-      "JavaScript (ES6+)",
-      "CSS for styling",
-      "localStorage for persistence"
+      'React (Functional Components & Hooks)',
+      'Redux Toolkit',
+      'RTK Query for API data fetching',
+      'REST APIs',
+      'JavaScript (ES6+)',
+      'CSS for responsive layouts'
     ],
-    demoLink: 'https://task-manager-bp.vercel.app/',
-    repoLink: 'https://github.com/b-poole/task-manager',
+    demoLink: null, // coming soon
+    repoLink: null, // coming soon
+    status: 'WIP'
   }
   // Add more projects here
 ];

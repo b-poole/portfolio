@@ -1,9 +1,9 @@
-export default function Project({ title, description, tech, features, demoLink, repoLink }) {
+export default function Project({ title, description, tech, features, demoLink, repoLink, status }) {
   return (
     <div className="project-card">
-      {demoLink ? (
-        <a href={demoLink} target="_blank" rel="noopener noreferrer" />
-      ) : null}
+        {status  === 'WIP' ? (
+            <span className="project-badge">LATEST</span>
+        ): null}
         <div className="project-content">
             <h3>{title}</h3>
             <p>{description}</p>
@@ -28,10 +28,14 @@ export default function Project({ title, description, tech, features, demoLink, 
             </div>
 
             <div className="project-links">
-            {demoLink && (
+            {demoLink ? (
                 <a href={demoLink} target="_blank" rel="noopener noreferrer" className="cta cta-primary">
                 Live Demo
                 </a>
+            ) : (
+                <span className="cta disabled">
+                    Coming Soon
+                </span>
             )}
             {repoLink && (
                 <a href={repoLink} target="_blank" rel="noopener noreferrer" className="cta cta-secondary">
