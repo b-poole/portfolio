@@ -8,7 +8,7 @@ export default function ContactMe() {
           <div className="contact-buttons">
             <a
               className="cta cta-primary"
-              href="www.linkedin.com/in/barrett-poole-630a3a145"
+              href="https://www.linkedin.com/in/barrett-poole-630a3a145"
               target="_blank"
               rel="noopener noreferrer"
             >
