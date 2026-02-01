@@ -39,8 +39,6 @@ The site showcases my projects, technical skills, and growth as a junior front-e
 **Concepts**
 - Responsive, mobile-first design
 - Component-based architecture
-- State management with hooks
-- REST API integration
 - Clean, maintainable code
 
 ---
